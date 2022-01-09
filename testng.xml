@@ -1,0 +1,78 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+<suite name="All Test Suite">
+    <test verbose="2" preserve-order="true" name="/Users/angelicazaporozhets/eclipse-workspace/TestNGBasicsBatch11">
+        <classes>
+            <class name="class01.BeforeClassAndAfterClass">
+                <methods>
+                    <include name="firstTest"/>
+                    <include name="secondTest"/>
+                    <include name="thirdTest"/>
+                </methods>
+            </class>
+            <class name="class01.Demo1">
+                <methods>
+                    <include name="firstTest"/>
+                    <include name="secondTest"/>
+                    <include name="thirdTest"/>
+                </methods>
+            </class>
+            <class name="class01.HomeWork">
+                <methods>
+                    <include name="openBrowser"/>
+                    <include name="login"/>
+                    <include name="tearDown"/>
+                </methods>
+            </class>
+            <class name="class01.PreConditionAndPostCondition">
+                <methods>
+                    <include name="test"/>
+                    <include name="anotherTest"/>
+                </methods>
+            </class>
+            <class name="class02.DependsOn">
+                <methods>
+                    <include name="login"/>
+                    <include name="verification"/>
+                </methods>
+            </class>
+            <class name="class02.EnableAndDisable">
+                <methods>
+                    <include name="firstTest"/>
+                    <include name="secondTest"/>
+                    <include name="thirdTest"/>
+                </methods>
+            </class>
+            <class name="class02.HardAssertion">
+                <methods>
+                    <include name="adminLogin"/>
+                    <include name="validationOfTitle"/>
+                </methods>
+            </class>
+            <class name="class02.LoginTest">
+                <methods>
+                    <include name="adminLogin"/>
+                    <include name="validationOfTitle"/>
+                </methods>
+            </class>
+            <class name="class02.Priority">
+                <methods>
+                    <include name="adminLogin"/>
+                    <include name="validationOfTitle"/>
+                </methods>
+            </class>
+            <class name="class02.PriorityClass">
+                <methods>
+                    <include name="firstTest"/>
+                    <include name="secondTest"/>
+                    <include name="thirdTest"/>
+                </methods>
+            </class>
+            <class name="class02.SoftAssertion">
+                <methods>
+                    <include name="verifyAndValidateSoftAssertion"/>
+                </methods>
+            </class>
+        </classes>
+    </test>
+</suite>
